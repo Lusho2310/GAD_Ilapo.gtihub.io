@@ -1,0 +1,42 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="buscar.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="gobierno">GOBIERNO AUTONOMO DESCENTRALIZADO PARROQUIAL DE ILAPO</h1>
+        <p class="text2">ILAPO - Guano - Chimborazo</p>
+        <p class="text3">Dirección: Calle Principal - CASA PARROQUIAL</p>
+        <h2 class="text4">INVENTARIO DE BIENES DE LARGA DURACIÓN</h2>
+    </header>
+    
+    <nav class="container">
+        <div class="row">
+            <a href="inicio.php" class="url1">Inicio</a>
+            <a href="Inventario.php" class="url1">Productos</a>
+            <a href="Ventana4.php" class="url1">Modificar</a>
+        </div>
+    </nav>
+
+    <div id="contenedor">
+        <div class="menu">
+            <button class="user-btn">Usuario</button>
+            <div class="dropdown-content">
+              <a href="index.php">Salir sesión</a>
+            </div>
+        </div>
+
+        <div id="row">
+            <input type="text" id="busqueda" placeholder="Buscar" onkeyup="buscar()">
+            <div id="suggestions"></div>
+            <div id="no-encontrado">No se encontró nada</div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

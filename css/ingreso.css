@@ -1,0 +1,311 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(3, 102, 102);
+}
+
+/* Contenedor principal con diseño flex */
+.main-container {
+    display: flex;
+    position: absolute;
+    left: 500px;
+    top: 352px;
+    transform: translate(-50%, -50%);
+}
+
+/* Contenedor de imagen */
+.img-container {
+    flex: 6;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+/* Imagen de fondo */
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenedor principal con diseño flex */
+.container {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 150px rgba(0, 0, 0, 1.5); /* Ajusta según tus preferencias */
+    border-radius: 10px;
+    position: relative; 
+}
+
+.box-shadow-adjust {
+    margin-top: 150px;
+}
+/* Imagen de persona en la sección izquierda */
+.persona-image {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+
+/* Sección derecha del contenedor */
+.right {
+    flex: 3;
+    padding: 20px;
+    position: absolute;
+    left: 300px;
+    height: 400px;
+}
+
+/* Contenedor de pestañas */
+.tab-container {
+    display: flex;
+    padding: 5px 0px;
+    position: absolute;
+    right: 30px;
+    margin-bottom: 20px;
+    top: 30px;
+    left: 290px;
+    width: 200px;
+}
+
+/* Pestañas */
+.tab {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 7px ;
+    transition: background-color 0.3s ease;
+    margin-left: 1px;
+    margin-right: 5px;
+}
+
+/* Efecto hover en pestañas */
+.tab:hover {
+    background-color: #2980b9;
+}
+
+/* Contenedor de login y registro */
+.login-container,
+.register-container {
+    background-color: #f9f9f9;
+    position: absolute;
+    border-radius: 10px;
+    padding: 10px 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Encabezado dentro del contenedor de login y registro */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulario dentro del contenedor de login */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Boton de inicio */
+.boton_inicio{
+    width: 100px;
+    left: 345px;
+    top: 200px;
+    position: absolute;
+}
+
+/*Boton de registro */
+.boton_regis{
+    width: 100px;
+    left: 345px;
+    top: 245px;
+    position: absolute;
+}
+
+
+
+
+/* Estilos comunes para input y button en formularios */
+input, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón en formularios */
+button {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en botón de formularios */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para el enlace "Olvidé mi Contraseña" */
+.olvide_contrasena {
+    margin-top: auto;
+    color: #a6a3a3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover en enlace "Olvidé mi Contraseña" */
+.olvide_contrasena:hover {
+    color: #d8d5d5;
+}
+
+/* Estilos del overlay (fondo oscuro al abrir la recuperación de contraseña) */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+/* Estilos del popup de recuperación de contraseña */
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el formulario dentro del popup */
+.popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para etiquetas dentro del popup */
+.popup label {
+    margin-bottom: 10px;
+}
+
+/* Estilos para inputs dentro del popup */
+.popup input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para botones dentro del popup */
+.popup button {
+    width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en botones dentro del popup */
+.popup button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para el encabezado dentro del popup */
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Capa de superposición de imagen */
+.image-overlay {
+    position: absolute;
+    left: 1000px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.7);
+}
+
+/* Diseño de esquina con imagen */
+.corner-design {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: url('riobamba_design.png') no-repeat center center;
+    background-size: contain;
+}
+
+/* Estilos del cuadro verde */
+.verde {
+    max-width: calc(100% - 350px); /* Restar el ancho del contenedor principal */
+    margin: 0 auto;
+    background-color: rgb(3, 102, 102);
+    padding: 15px;
+    height: 770px;
+    position: relative;
+    z-index: -1; /* Mover el fondo detrás del contenido */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
+    color: white; /* Color del texto */
+    font-family: 'Arial', sans-serif; /* Tipo de fuente */
+    text-align: center;
+}
+
+/* Estilos del encabezado dentro del cuadro verde */
+.verde h1 {
+    margin: 0; /* Eliminar el margen predeterminado del encabezado */
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+}
+
+#cuadro{
+    position: absolute;
+    background-color: #5a5a5a;
+    height: 400px;
+    width: 900px;
+    margin-left: 295px;
+    margin-top: 150px;
+    border-radius: 15px;
+}
+.disenio3{
+    position: absolute;
+    background-color: #fa0000;
+    padding: 20px;
+    margin-top: -30px;
+}
+
+.disenio4{
+    background-color: rgb(58, 58, 58);
+    padding: 15px 105px;
+    margin-top: -45px;
+    margin-left: 263px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

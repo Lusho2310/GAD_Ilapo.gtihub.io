@@ -1,0 +1,76 @@
+aside {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+}
+
+button[type="submit"]:active {
+    transform: translateY(1px);
+}
+.margin{
+    width: 200px;
+    height: 200px;
+    background-color: #555;
+}

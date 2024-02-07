@@ -1,0 +1,30 @@
+.btn-modificar,
+.btn-eliminar {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-modificar:hover,
+.btn-eliminar:hover {
+    background-color: #0056b3;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

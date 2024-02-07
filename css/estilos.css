@@ -1,0 +1,410 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  }
+
+  header {
+    background-color: #035f5e;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+  }
+  .text2, .text3, .text4 {
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+.text3, .text4 {
+    margin-top: 5px;
+}
+
+.text4 {
+    font-size: 1.5em;
+}
+.container {
+  background-color: #3b3a3a;
+  padding: 10px 0;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.url1 {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  background-color: #5d5d5d;
+}
+.url1:hover {
+  background-color: #6b6969;
+}
+#row{
+    background-color: #272727;
+    height: 50px;
+    top: 300px;
+}
+.row {
+    top: -12px;
+    right: 445px;
+    display: flex; /* Cambiado a flex para que los elementos estén en línea horizontal */
+    gap: 1px; /* Agregado espacio entre elementos para mejorar la presentación */
+}
+#contenedor {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.user-btn {
+  background-color: #d5d5d5;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.menu:hover .dropdown-content {
+  display: block;
+}
+#busqueda {
+  position: absolute;
+  margin-top: 10px;
+  right: 20px; /* Alinea con el margen derecho */
+  width: 415px;
+  height: 25px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  z-index: 1; /* Asegura que el campo de búsqueda esté sobre las sugerencias */
+}
+#centro {
+  
+  padding: 20px;
+  height: 575px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+}
+#section1 {
+  background-color: #0d00ff;
+  height: 510px;
+  width: 75%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#section2 {
+  background-color: #ff0000;
+  height: 510px;
+  width: 25%;
+  margin-top: 20px;
+}
+footer {
+  background-color: #035f5e;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+#busqueda:focus {
+  outline: none;
+  border: 1px solid #534f4f;
+}
+
+#busqueda::placeholder {
+  color: #9c9797;
+}
+
+#suggestions {
+  display: none;
+  position: absolute;
+  background-color: #494949;
+  border: 1px solid #484848;
+  border-radius: 3px;
+  padding: 10px;
+  width: 400px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 35px;
+  right: 20px;
+}
+
+#suggestions li {
+  padding: 5px;
+}
+
+#suggestions li a {
+  color: #dedede; /* Cambia el color de las letras en las sugerencias */
+  text-decoration: none;
+}
+
+#suggestions li a:hover {
+  color: #252525; /* Cambia el color al pasar el mouse sobre las sugerencias */
+  text-decoration: underline;
+}
+
+.sugerencia a {
+  color: #ffffff; /* Cambia el color de las letras en las sugerencias */
+  text-decoration: none;
+}
+
+.sugerencia a:hover {
+  color: #ffffff; /* Cambia el color al pasar el mouse sobre las sugerencias */
+  text-decoration: underline;
+}
+
+
+.sugerencia {
+  cursor: pointer;
+  padding: 5px;
+  transition: background-color 0.3s;
+  display: inline-block;
+  width: 408px;
+  text-decoration: none;
+  border: 1px solid #444343;
+  background-color: #5d5d5d;
+  margin-left: -10px;
+}
+
+.sugerencia:hover,
+.sugerencia:focus {
+  background-color: #444343;
+}
+
+.sugerencia a {
+  color: #000;
+  text-decoration: none;
+}
+
+.sugerencia a:hover {
+  text-decoration: underline;
+}
+
+#no-encontrado {
+  top: 35px;
+  display: none;
+  position: absolute;
+  padding: 20px 2px;
+  text-align: center;
+  border: 1px solid;
+  width: 415px;
+  height: 25px;
+  background-color: #555;
+  border: 1px solid #484848;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.3s; /* Agregamos transición para un cambio suave de color */
+  right: 20px; /* Alinea con el margen derecho */
+}
+
+#no-encontrado:hover {
+  background-color: #555; /* Cambiamos el color de fondo al pasar el mouse sobre el elemento */
+}
+  /* NAV */
+
+
+nav a {
+    background-color: #3b3a3a;
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 15px;
+    display: block; /* Añadido para que los elementos sean bloques y tengan el mismo tamaño */
+    border-radius: 3px; /* Agregado borde redondeado para mejorar el aspecto */
+}
+
+nav a:hover {
+    background-color: #6b6969;
+}
+
+.url1 {
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+  section {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  table th {
+    text-align: left;
+  }
+  
+  img {
+    border: 1px solid #ccc;
+  }
+  .menu-formulario {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+select {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos del menú */
+.menu {
+  position: absolute;
+  display: inline-block;
+  margin-left: 20px;
+  z-index: 1001;
+  margin-top: 5px;
+  background-color: #8b8b8b;
+  border-radius: 10px;
+  border: 1px solid #8b8b8b;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 150px;
+}
+
+.menu:hover {
+  position: absolute;
+  color: #757575;
+  background-color: rgb(244, 242, 242);
+}
+
+/* Estilos del botón de usuario */
+.user-btn {
+  width: 150px;
+  background-color: #d5d5d5;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s; /* Agregamos una transición para que sea suave */
+  position: relative; /* Añadimos posición relativa para que la posición sea relativa al contenedor */
+}
+
+
+/* Estilos específicos para la flecha dentro del botón */
+.user-btn::after {
+  content: "◄"; /* Asegúrate de que el contenido de la flecha esté presente */
+  margin-left: 5px; /* Ajusta el espacio entre el texto y la flecha según tus preferencias */
+  display: inline-block; /* Hacemos que la flecha sea un elemento en línea */
+  transition: transform 0.7s; /* Aplicamos la transición a la flecha también */
+  transform-origin: center; /* El punto de origen de la rotación es el centro */
+  position: absolute; /* Añadimos posición absoluta para que la posición sea relativa al botón */
+}
+
+/* Cuando hover sobre el botón, aplicamos la transformación */
+.menu:hover .user-btn {
+  transform: translateY(3px); /* Ajusta la cantidad de movimiento hacia abajo según tus preferencias */
+
+}
+
+/* Estilos del menú desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+/* Estilos de los enlaces del menú desplegable */
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Estilos al pasar el cursor sobre los enlaces */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mostrar el menú desplegable al hacer clic en el botón */
+.menu:hover .dropdown-content {
+  display: block;
+}
+
+/* Cuando hover sobre el botón, aplicamos la translación hacia abajo a la flecha */
+.menu:hover .user-btn::after {
+  transform: translateY(0px) rotate(-90deg); /* Movemos la flecha hacia abajo y rotamos 90 grados */
+}
+
+
+aside {
+  color: #ffffff;
+}
+
+/* Seccion del centro */
+#centro{
+  background-color: #272727;
+  padding: 20px;
+  height: 575px;
+}
+
+
+
+footer {
+  background-color: rgb(3, 63, 62);
+  padding: 20px;
+  text-align: center;
+}
+
+
